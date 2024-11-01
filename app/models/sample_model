@@ -1,0 +1,7 @@
+# app/models/sample_model.py
+from .db_service import db
+
+class SampleModel(db.Model):
+    __tablename__ = 'sample_model'
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(50), nullable=False)
